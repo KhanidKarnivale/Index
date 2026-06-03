@@ -3,17 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Khanid Karnivale | Kingdom Recruitment Bureau</title>
+
+<title>Khanid Karnivale</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
+
 :root{
-    --bg:#0a0c0b;
-    --panel:#121614;
-    --green:#1f5c43;
-    --green-bright:#2f8f68;
-    --silver:#c9d0cc;
-    --gold:#d6b25e;
-    --text:#e5e7e6;
+    --bg:#070707;
+    --panel:#111111cc;
+    --green:#145d42;
+    --green-bright:#2f9d72;
+    --silver:#d9d9d9;
+    --gold:#a68d45;
 }
 
 *{
@@ -22,285 +25,460 @@
     box-sizing:border-box;
 }
 
-body{
-    background:var(--bg);
-    color:var(--text);
-    font-family:Segoe UI, sans-serif;
-    line-height:1.6;
+html{
+    scroll-behavior:smooth;
 }
 
-header{
-    min-height:100vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    text-align:center;
-    padding:2rem;
+body{
+    font-family:'Inter',sans-serif;
+    color:#ececec;
     background:
-        linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-        url("https://images.ctfassets.net/7lhcm73ukv5p/6W4gM0r4kY1x8fP4x4vJ3u/eve-online.jpg");
-    background-size:cover;
-    background-position:center;
+    radial-gradient(circle at top left,#145d4220 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#145d4215 0%,transparent 30%),
+    linear-gradient(135deg,#030303,#101010);
+    overflow-x:hidden;
+}
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+    background-image:
+        linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+    background-size:40px 40px;
+    pointer-events:none;
 }
 
 .hero{
-    max-width:900px;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    position:relative;
 }
 
-.hero h1{
-    font-size:4rem;
-    letter-spacing:4px;
+.hero::before{
+    content:"✦";
+    position:absolute;
+    font-size:30rem;
+    color:rgba(20,93,66,.08);
+    z-index:0;
+}
+
+.hero > *{
+    position:relative;
+    z-index:1;
+}
+
+h1{
+    font-family:'Cinzel',serif;
+    font-size:clamp(3rem,8vw,6rem);
+    letter-spacing:6px;
     color:var(--silver);
-    margin-bottom:1rem;
+    text-shadow:0 0 20px rgba(47,157,114,.4);
 }
 
-.hero h2{
-    color:var(--gold);
-    font-weight:300;
-    margin-bottom:2rem;
+.tagline{
+    margin-top:20px;
+    max-width:900px;
+    font-size:1.2rem;
+    color:#b6d9ca;
 }
 
-.hero p{
-    max-width:700px;
-    margin:0 auto 2rem;
-    font-size:1.15rem;
+.button-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:40px;
 }
 
-.button{
+.btn{
     display:inline-block;
+    padding:14px 30px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    transition:.3s;
+}
+
+.primary{
     background:var(--green);
     color:white;
-    padding:14px 28px;
-    text-decoration:none;
-    border-radius:4px;
-    margin:0.5rem;
-    transition:0.3s;
 }
 
-.button:hover{
+.primary:hover{
     background:var(--green-bright);
 }
 
-section{
+.secondary{
+    border:1px solid var(--green-bright);
+    color:white;
+}
+
+.secondary:hover{
+    background:rgba(47,157,114,.15);
+}
+
+.section{
     max-width:1200px;
     margin:auto;
-    padding:5rem 2rem;
+    padding:90px 25px;
 }
 
 .section-title{
-    color:var(--gold);
-    margin-bottom:2rem;
-    text-transform:uppercase;
-    letter-spacing:2px;
-}
-
-.card-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:1.5rem;
+    font-family:'Cinzel',serif;
+    font-size:2.3rem;
+    margin-bottom:30px;
+    color:#9dd7bd;
 }
 
 .card{
     background:var(--panel);
-    border-left:4px solid var(--green);
-    padding:1.5rem;
+    border:1px solid rgba(47,157,114,.2);
+    border-radius:16px;
+    padding:30px;
+    backdrop-filter:blur(8px);
 }
 
-.card h3{
-    margin-bottom:1rem;
-    color:var(--silver);
+.grid{
+    display:grid;
+    gap:25px;
+}
+
+.grid-3{
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
 }
 
 .quote{
-    background:var(--panel);
-    padding:2rem;
-    margin:1rem 0;
-    border-left:4px solid var(--gold);
+    border-left:4px solid var(--green-bright);
+    padding-left:20px;
     font-style:italic;
+    color:#d0d0d0;
 }
 
-.requirements ul{
-    list-style:none;
+.ship-card h3{
+    color:#9dd7bd;
+    margin-bottom:10px;
 }
 
-.requirements li{
-    margin:0.75rem 0;
+ul{
+    padding-left:20px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+.cta{
+    text-align:center;
 }
 
 footer{
-    background:#070807;
     text-align:center;
-    padding:3rem 2rem;
-    border-top:1px solid #1d1d1d;
+    padding:40px;
+    color:#777;
+    border-top:1px solid rgba(255,255,255,.08);
 }
 
-footer h3{
-    color:var(--gold);
-    margin-bottom:1rem;
+.highlight{
+    color:#9dd7bd;
 }
 
-.divider{
-    height:1px;
-    background:#202422;
-    margin:2rem 0;
-}
 </style>
 </head>
-
 <body>
 
-<header>
-    <div class="hero">
-        <h1>KHANID KARNIVALE</h1>
-        <h2>Official Kingdom Recruitment Bureau</h2>
+<section class="hero">
 
-        <p>
-            Loyalty is its own reward. Service is its own freedom.
-            The frontier burns. The Kingdom endures.
-            Join fellow capsuleers dedicated to faction warfare,
-            dark aesthetics, and bringing style back to the battlefield.
-        </p>
+<h1>KHANID KARNIVALE</h1>
 
-        <a href="#join" class="button">Enlist Today</a>
-        <a href="#about" class="button">Learn More</a>
-    </div>
-</header>
+<p class="tagline">
+The Kingdom's finest collection of misfits, zealots, duelists,
+fashion enthusiasts, and lowsec troublemakers.
+</p>
 
-<section id="about">
-    <h2 class="section-title">The Kingdom Requires More Than Soldiers</h2>
+<div class="button-group">
+<a href="https://discord.gg/ZCnsxHwyuC" class="btn primary">Join Discord</a>
+<a href="Yhttps://zkillboard.com/corporation/98817357/" class="btn secondary">View zKillboard</a>
+</div>
 
-    <p>
-        Khanid Karnivale is a faction warfare corporation devoted to the
-        Kingdom spirit of discipline, independence, and martial excellence.
-        We fight hard, fly together, and maintain a healthy appreciation for
-        ships that look dangerous before they even lock targets.
-    </p>
-
-    <div class="divider"></div>
-
-    <div class="card-grid">
-
-        <div class="card">
-            <h3>Faction Warfare</h3>
-            <p>
-                Capture systems, contest enemy territory,
-                and leave your mark on the warzone.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Small Gang PvP</h3>
-            <p>
-                Roams, skirmishes, and battles where every pilot matters.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>New Pilot Friendly</h3>
-            <p>
-                Learn the ropes with experienced pilots and practical guidance.
-            </p>
-        </div>
-
-        <div class="card">
-            <h3>Kingdom Aesthetic</h3>
-            <p>
-                Dark hulls. Khanid skins. Beautiful ships.
-                Victory should look good.
-            </p>
-        </div>
-
-    </div>
 </section>
 
-<section>
-    <h2 class="section-title">Approved Vessels of Distinction</h2>
+<section class="section">
 
-    <div class="card-grid">
+<h2 class="section-title">Who We Are</h2>
 
-        <div class="card">
-            <h3>Sacrilege</h3>
-            <p>The Kingdom's hammer.</p>
-        </div>
+<div class="card">
 
-        <div class="card">
-            <h3>Curse</h3>
-            <p>The enemy's nightmare.</p>
-        </div>
+<p>
+Khanid Karnivale is a relaxed but purposeful faction warfare corporation
+fighting for the Amarr Empire through a distinctly Khanid lens.
+</p>
 
-        <div class="card">
-            <h3>Vengeance</h3>
-            <p>Small. Relentless. Unreasonable.</p>
-        </div>
+<br>
 
-        <div class="card">
-            <h3>Damnation</h3>
-            <p>Lead from the front.</p>
-        </div>
+<p>
+We value camaraderie, memorable fights, beautiful ships,
+and pilots who enjoy New Eden without treating it like a second job.
+</p>
 
-    </div>
+<br>
+
+<p class="quote">
+Fly dangerous. Fly beautiful. Fly Khanid.
+</p>
+
+</div>
+
 </section>
 
-<section>
-    <h2 class="section-title">Citizen Testimonials</h2>
+<section class="section">
 
-    <div class="quote">
-        "I joined for faction warfare. I stayed because my ship finally matched my wardrobe."
-    </div>
+<h2 class="section-title">The Khanid Way</h2>
 
-    <div class="quote">
-        "The enemy called us fanatics. Then they checked the battle report."
-    </div>
+<div class="card">
 
-    <div class="quote">
-        "I was promised glory. Instead I received responsibility. The glory followed shortly thereafter."
-    </div>
+<p>
+The Khanid Kingdom forged its own path through independence,
+discipline, and military strength.
+</p>
+
+<br>
+
+<p>
+We embrace the same philosophy:
+</p>
+
+<br>
+
+<ul>
+<li>Independent thinking</li>
+<li>Self-sufficiency</li>
+<li>Competence over ego</li>
+<li>Good fights over killboard obsession</li>
+<li>Style over efficiency (within reason)</li>
+</ul>
+
+<br>
+
+<p>
+Because if you're going to explode, you might as well explode looking fantastic.
+</p>
+
+</div>
+
 </section>
 
-<section class="requirements">
-    <h2 class="section-title">Requirements For Service</h2>
+<section class="section">
 
-    <ul>
-        <li>✓ Willingness to learn</li>
-        <li>✓ Willingness to undock</li>
-        <li>✓ Willingness to lose ships</li>
-        <li>✓ Appreciation for Kingdom aesthetics</li>
-        <li>✓ Good attitude and teamwork</li>
-    </ul>
+<h2 class="section-title">What We Do</h2>
+
+<div class="grid grid-3">
+
+<div class="card">
+<h3>Faction Warfare</h3>
+<p>
+Frontline combat, plexing, small gang roams, and spontaneous violence.
+</p>
+</div>
+
+<div class="card">
+<h3>Small Gang PvP</h3>
+<p>
+Fast-moving fleets where pilot skill matters more than numbers.
+</p>
+</div>
+
+<div class="card">
+<h3>Ship Fashion</h3>
+<p>
+Khanid SKINs, matching fleets, and ships that look as dangerous as they are.
+</p>
+</div>
+
+</div>
+
 </section>
 
-<section id="join">
-    <h2 class="section-title">Enlistment Office</h2>
+<section class="section">
 
-    <p>
-        The warzone will not secure itself.
-        The frontier will not defend itself.
-        The banner will not carry itself.
-    </p>
+<h2 class="section-title">Preferred Hulls</h2>
 
-    <br>
+<div class="grid grid-3">
 
-    <a href="https://discord.gg/TPsJV5A2En" class="button">
-        Join Discord
-    </a>
+<div class="card ship-card">
+<h3>Vengeance</h3>
+<p>
+The iconic Khanid assault frigate. Durable, aggressive, and endlessly stubborn.
+</p>
+</div>
 
-    <a href="https://zkillboard.com/corporation/98817357/" class="button">
-        View Combat Record
-    </a>
+<div class="card ship-card">
+<h3>Sacrilege</h3>
+<p>
+Heavy armor. Heavy missiles. Heavy consequences.
+</p>
+</div>
+
+<div class="card ship-card">
+<h3>Damnation</h3>
+<p>
+A command ship built like a fortress.
+</p>
+</div>
+
+<div class="card ship-card">
+<h3>Heretic</h3>
+<p>
+Proof that disruption is an art form.
+</p>
+</div>
+
+<div class="card ship-card">
+<h3>Dragoon Navy Issue</h3>
+<p>
+Weaponized heresy with a drone bay.
+</p>
+</div>
+
+<div class="card ship-card">
+<h3>Purifier</h3>
+<p>
+Because sometimes subtlety arrives as a bomb.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Fashion Before Function</h2>
+
+<div class="card">
+
+<ul>
+<li>Khanid SKINs encouraged</li>
+<li>Dark color palettes welcomed</li>
+<li>Matching fleet appearances appreciated</li>
+<li>Ship names with personality respected</li>
+<li>Looking cool is mandatory</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Member Quotes</h2>
+
+<div class="grid">
+
+<div class="card">
+<p class="quote">
+"I came for faction warfare. I stayed for the questionable ship names."
+<br><br>
+— Cela Kashuken
+</p>
+</div>
+
+<div class="card">
+<p class="quote">
+"Every loss mail is temporary. The screenshot is forever."
+</p>
+</div>
+
+<div class="card">
+<p class="quote">
+"A Khanid ship without a Khanid skin feels naked."
+</p>
+</div>
+
+<div class="card">
+<p class="quote">
+"Efficiency is nice. Looking cool is mandatory."
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="section-title">Join Us</h2>
+
+<div class="card">
+
+<h3>We're Looking For</h3>
+
+<br>
+
+<ul>
+<li>New pilots</li>
+<li>Returning veterans</li>
+<li>Faction warfare enthusiasts</li>
+<li>Ship fashion addicts</li>
+<li>People who enjoy having fun</li>
+</ul>
+
+<br>
+
+<h3>We're Not Looking For</h3>
+
+<br>
+
+<ul>
+<li>Drama</li>
+<li>Elitism</li>
+<li>Mandatory second jobs disguised as corporations</li>
+</ul>
+
+</div>
+
+</section>
+
+<section class="section cta">
+
+<h2 class="section-title">Become Part of the Karnivale</h2>
+
+<p style="margin-bottom:30px;">
+Join us on Discord, fly with us in faction warfare,
+and help make lowsec a little more stylish.
+</p>
+
+<div class="button-group" style="justify-content:center;">
+
+<a href="https://discord.gg/ZCnsxHwyuC" class="btn primary">
+Join Discord
+</a>
+
+<a href="https://zkillboard.com/corporation/98817357/" class="btn secondary">
+View zKillboard
+</a>
+
+</div>
+
 </section>
 
 <footer>
-    <h3>KHANID KARNIVALE</h3>
 
-    <p>
-        "The Dark Banner Still Flies"
-    </p>
+<p>
+Fly Dangerous • Fly Beautiful • Fly Khanid
+</p>
 
-    <br>
+<br>
 
-    <p>
-        Serving the Kingdom one explosion at a time.
-    </p>
+<p>
+Discord • zKillboard • EVE Who • Raven's Nest Alliance
+</p>
+
 </footer>
 
 </body>
