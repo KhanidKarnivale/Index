@@ -1,193 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Khanid Karnivale | Faith • Firepower • Fashion</title>
-  <meta name="description" content="Khanid Karnivale: easy-going faction warfare with Amarr and Khanid style." />
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khanid Karnivale</title>
+  <meta name="description" content="Khanid Karnivale - Khanid-themed Amarr faction warfare corporation." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="background">
-    <div class="stars"></div>
-    <div class="nebula"></div>
-    <img class="watermark" src="assets/khanid-eye.png" alt="" />
+
+<nav class="topbar">
+  <a class="brand" href="#home">
+    <img src="assets/khanid-eye.png" alt="Khanid Karnivale emblem">
+    <span>
+      <strong>Khanid Karnivale</strong>
+      <small>Amarr Empire • Khanid Kingdom</small>
+    </span>
+  </a>
+
+  <input type="checkbox" id="nav-toggle">
+  <label for="nav-toggle" class="hamburger"><span></span><span></span><span></span></label>
+
+  <div class="navlinks">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#way">Our Way</a>
+    <a href="#style">Theme & Style</a>
+    <a href="#join">Join Us</a>
+    <a href="https://zkillboard.com/corporation/98817357/" target="_blank">Killboard</a>
   </div>
 
-  <nav class="nav">
-    <a class="brand" href="#top">
-      <img src="assets/khanid-eye.png" alt="Khanid Karnivale logo">
-      <span>Khanid Karnivale</span>
-    </a>
-    <button class="menu-button" id="menuButton" aria-label="Open navigation">☰</button>
-    <div class="nav-links" id="navLinks">
-      <a href="#ships">Ships</a>
-      <a href="#doctrine">Doctrine</a>
-      <a href="#quotes">Quotes</a>
-      <a href="#join">Join</a>
-      <a class="nav-cta" href="https://discord.gg/DU4XxDQ2dz" target="_blank" rel="noopener">Discord</a>
+  <a class="nav-cta" href="https://discord.gg/DU4XxDQ2dz" target="_blank">Join Discord</a>
+</nav>
+
+<header id="home" class="hero">
+  <div class="nebula nebula-left"></div>
+  <div class="nebula nebula-right"></div>
+
+  <img class="hero-emblem pulse" src="assets/khanid-eye.png" alt="Khanid Karnivale emblem">
+
+  <h1>Khanid Karnivale</h1>
+
+  <div class="ornament"><span></span><b>✦</b><span></span></div>
+
+  <p class="subtitle">The Kingdom’s Most Stylish<br>Faction Warfare Corporation</p>
+
+  <div class="hero-actions">
+    <a class="button primary" href="https://discord.gg/DU4XxDQ2dz" target="_blank">Join Discord</a>
+    <a class="button secondary" href="https://zkillboard.com/corporation/98817357/" target="_blank">View zKillboard</a>
+  </div>
+</header>
+
+<section class="feature-strip">
+  <article><span class="icon">✹</span><h3>Amarr Loyal</h3><p>We fight for the Empire with Khanid pride.</p></article>
+  <article><span class="icon">⚔</span><h3>Faction Warfare</h3><p>Frontline combat, plexing, and small gang roams.</p></article>
+  <article><span class="icon">◉</span><h3>Pilot Driven</h3><p>No mandatory CTAs. Real life comes first.</p></article>
+  <article><span class="icon">♛</span><h3>Style Is Forever</h3><p>Khanid ships and skins whenever possible.</p></article>
+  <article><span class="icon">☷</span><h3>Strong Community</h3><p>Friendly pilots, good vibes, better fights.</p></article>
+</section>
+
+<main class="layout">
+  <section id="about" class="panel">
+    <h2>About Us</h2>
+    <p>Khanid Karnivale is a casual but committed faction warfare corporation operating in the Amarr Empire through the proud traditions of the Khanid Kingdom.</p>
+    <p>We are a collection of independent pilots, veteran capsuleers, and new voices alike—united by our love of good fights, stylish ships, and victory on our own terms.</p>
+    <p class="callout">We do not just fly for the Empire. We fly for the Kingdom.</p>
+  </section>
+
+  <section id="way" class="panel">
+    <h2>The Khanid Way</h2>
+    <p>The Khanid Kingdom broke away from the Empire centuries ago and forged its own path. We embrace that same philosophy in New Eden.</p>
+    <ul class="checklist">
+      <li>Independent thinking</li>
+      <li>Self-sufficiency</li>
+      <li>Competence over ego</li>
+      <li>Style over efficiency, within reason</li>
+      <li>Good fights over meaningless stats</li>
+    </ul>
+    <p class="small-callout">If you are going to explode, you might as well do it looking magnificent.</p>
+  </section>
+
+  <section id="style" class="panel emblem-panel">
+    <img src="assets/khanid-eye.png" alt="">
+    <h2>Theme & Style</h2>
+    <p>We prioritize the Khanid aesthetic. Whether it is flying Khanid hulls, using Khanid SKINs, or bringing dark imperial elegance to the battlefield—style matters.</p>
+    <ul class="checklist">
+      <li>Khanid ships and designs</li>
+      <li>Khanid SKINs whenever possible</li>
+      <li>Dark, refined, and imperial</li>
+      <li>Make your ship a statement</li>
+    </ul>
+  </section>
+
+  <section class="panel quotes">
+    <h2>Pilot Quotes</h2>
+    <div class="quote-box">
+      <blockquote>“A beautiful ship with a brave pilot is worth more than a fleet of bland.”</blockquote>
+      <cite>— Karnivale Pilot</cite>
     </div>
-  </nav>
+    <div class="quote-dots"><span></span><span></span><span></span><span></span></div>
+  </section>
 
-  <header id="top" class="hero">
-    <div class="hero-card reveal">
-      <img class="hero-logo" src="assets/khanid-eye.png" alt="Khanid Eye emblem">
-      <p class="eyebrow">Raven's Nest Alliance</p>
-      <h1>Khanid Karnivale</h1>
-      <p class="tagline">Faith • Firepower • Fashion</p>
-      <p class="hero-copy">
-        Easy-going faction warfare with a strong emphasis on character, Amarr hulls,
-        Khanid flair, sharp screenshots, and ships that look intimidating before they explode.
-      </p>
-      <div class="button-row">
-        <a class="button primary" href="https://discord.gg/DU4XxDQ2dz" target="_blank" rel="noopener">Join Discord</a>
-        <a class="button" href="https://zkillboard.com/corporation/98817357/" target="_blank" rel="noopener">zKillboard</a>
-        <a class="button" href="https://evewho.com/corporation/98817357" target="_blank" rel="noopener">EVE Who</a>
-      </div>
+  <section class="wide-card">
+    <div class="big-icon">☠</div>
+    <div>
+      <h2>Recent Karnage</h2>
+      <p>Check our latest activity on zKillboard.</p>
+      <a class="button secondary" href="https://zkillboard.com/corporation/98817357/" target="_blank">View Killboard</a>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <section class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">The Karnivale Creed</p>
-        <h2>Faction warfare, but make it Khanid.</h2>
-      </div>
-      <div class="pillars">
-        <article>
-          <span>01</span>
-          <h3>Aesthetics</h3>
-          <p>We respect a good fit, but we also respect the sacred art of looking terrifying on grid.</p>
-        </article>
-        <article>
-          <span>02</span>
-          <h3>Character</h3>
-          <p>Names, hulls, skins, local banter, and war stories all matter. Be memorable.</p>
-        </article>
-        <article>
-          <span>03</span>
-          <h3>Warfare</h3>
-          <p>Undock. Fight. Learn. Laugh. Then undock again with a better ship name.</p>
-        </article>
-      </div>
-    </section>
+  <section id="join" class="wide-card join">
+    <h2>Join the Karnivale</h2>
+    <p>We are always looking for pilots who value freedom, camaraderie, and the Khanid way. Come fly with us. Make history. Look good doing it.</p>
+    <a class="button primary" href="https://discord.gg/DU4XxDQ2dz" target="_blank">Join Our Discord</a>
+  </section>
 
-    <section id="ships" class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Featured Hulls</p>
-        <h2>Imperial power, royal style, questionable judgment.</h2>
-      </div>
-      <div class="ship-grid">
-        <article class="ship-card">
-          <div class="ship-orbit"></div>
-          <h3>Vengeance</h3>
-          <p>Khanid assault-frigate attitude in a compact package. Stubborn, stylish, and harder to kill than it has any right to be.</p>
-          <ul><li>Role: Assault Frigate</li><li>Vibe: Black-armored brawler</li><li>Ideal for: small-gang trouble</li></ul>
-        </article>
-        <article class="ship-card">
-          <div class="ship-orbit"></div>
-          <h3>Curse</h3>
-          <p>The polite way to tell hostile capacitor users that their services are no longer required.</p>
-          <ul><li>Role: Combat Recon</li><li>Vibe: Energy vampire royalty</li><li>Ideal for: making pilots panic</li></ul>
-        </article>
-        <article class="ship-card">
-          <div class="ship-orbit"></div>
-          <h3>Sacrilege</h3>
-          <p>A heavy assault cruiser with Khanid menace baked directly into the hull plating.</p>
-          <ul><li>Role: Heavy Assault Cruiser</li><li>Vibe: Sacred violence</li><li>Ideal for: committed brawls</li></ul>
-        </article>
-        <article class="ship-card">
-          <div class="ship-orbit"></div>
-          <h3>Imperial Navy Slicer</h3>
-          <p>Fast, elegant, fragile enough to keep life exciting, and dramatic enough to deserve a theme song.</p>
-          <ul><li>Role: Navy Frigate</li><li>Vibe: Laser duelist</li><li>Ideal for: stylish skirmishing</li></ul>
-        </article>
-      </div>
-    </section>
+  <section class="wide-card">
+    <div class="big-icon">✦</div>
+    <div>
+      <h2>Part of Raven’s Nest</h2>
+      <p>Proud member of Raven’s Nest Amarr Faction Warfare Alliance.</p>
+      <a class="button secondary" href="https://discord.gg/u8GUUbbmwg" target="_blank">Join Their Discord</a>
+    </div>
+  </section>
+</main>
 
-    <section id="doctrine" class="section split reveal">
-      <div>
-        <p class="eyebrow">What We Do</p>
-        <h2>Low-pressure roams. High-style explosions.</h2>
-        <p>
-          Khanid Karnivale is built for pilots who want faction warfare without turning the game into a second job.
-          We like Amarr hulls, Khanid skins, themed fleets, screenshots, small-gang chaos, and pilots who can enjoy the loss mail.
-        </p>
-      </div>
-      <div class="terminal">
-        <p>> fleet_status: forming</p>
-        <p>> doctrine: black / silver / green</p>
-        <p>> acceptable_losses: hilarious</p>
-        <p>> local_presence: theatrical</p>
-        <p>> result: you may be Khanid material</p>
-      </div>
-    </section>
+<footer>
+  <p class="motto">Fly Dangerous. &nbsp; Fly Beautiful. &nbsp; Fly Khanid.</p>
+  <div class="footer-links">
+    <a href="https://discord.gg/DU4XxDQ2dz" target="_blank">Discord</a>
+    <span>✦</span>
+    <a href="https://zkillboard.com/corporation/98817357/" target="_blank">zKillboard</a>
+    <span>✦</span>
+    <a href="https://evewho.com/corporation/98817357" target="_blank">EVE Who</a>
+    <span>✦</span>
+    <a href="https://discord.gg/u8GUUbbmwg" target="_blank">Raven’s Nest Alliance</a>
+  </div>
+</footer>
 
-    <section class="section reveal">
-      <div class="stats">
-        <div><strong data-count="5000">0</strong><span>Kills</span></div>
-        <div><strong data-count="100">0</strong><span>Roams</span></div>
-        <div><strong data-count="50">0</strong><span>Pilots</span></div>
-        <div><strong data-count="999">0</strong><span>Questionable Decisions</span></div>
-      </div>
-    </section>
-
-    <section id="quotes" class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Member Quotes</p>
-        <h2>From the sacred archives of bad decisions.</h2>
-      </div>
-      <div class="quote-box">
-        <button id="prevQuote" aria-label="Previous quote">‹</button>
-        <blockquote id="quoteText"></blockquote>
-        <button id="nextQuote" aria-label="Next quote">›</button>
-      </div>
-    </section>
-
-    <section class="section reveal">
-      <div class="section-head">
-        <p class="eyebrow">Gallery Placeholders</p>
-        <h2>Drop your screenshots here later.</h2>
-      </div>
-      <div class="gallery">
-        <div>Faction Warfare</div>
-        <div>Battle Reports</div>
-        <div>Khanid Fashion</div>
-        <div>Alliance Ops</div>
-        <div>Fleet Undocks</div>
-        <div>Glorious Losses</div>
-      </div>
-    </section>
-
-    <section id="join" class="section join reveal">
-      <img src="assets/khanid-eye.png" alt="">
-      <div>
-        <p class="eyebrow">Recruitment</p>
-        <h2>You may be Khanid material.</h2>
-        <p>Join for faction warfare, stay for the ship aesthetics, screenshots, and pilots with actual personality.</p>
-        <div class="checklist">
-          <span>☑ Easy-going faction warfare</span>
-          <span>☑ Amarr and Khanid hull appreciation</span>
-          <span>☑ Small gang roams</span>
-          <span>☑ Good fights, good humor</span>
-        </div>
-        <div class="button-row">
-          <a class="button primary" href="https://discord.gg/DU4XxDQ2dz" target="_blank" rel="noopener">Join the Discord</a>
-          <a class="button" href="https://zkillboard.com/corporation/98817357/" target="_blank" rel="noopener">View Kills</a>
-          <a class="button" href="https://evewho.com/corporation/98817357" target="_blank" rel="noopener">View Corp</a>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Khanid Karnivale • Raven's Nest Alliance</p>
-    <p><a href="https://discord.gg/DU4XxDQ2dz" target="_blank" rel="noopener">Discord</a> • <a href="https://zkillboard.com/corporation/98817357/" target="_blank" rel="noopener">zKillboard</a> • <a href="https://evewho.com/corporation/98817357" target="_blank" rel="noopener">EVE Who</a></p>
-  </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>
