@@ -1,22 +1,15 @@
-# Khanid Karnivale V6 Custom
+# Khanid Karnivale — The Kingdom Archives
 
-This is a GitHub Pages-ready static website.
+GitHub Pages-ready static website. Upload all files in this folder to the root of your repository.
 
-## Included
-- Custom Khanid Eye logo integrated into the hero, navbar, background, and recruitment section
-- Discord button: https://discord.gg/DU4XxDQ2dz
-- zKillboard button: https://zkillboard.com/corporation/98817357/
-- EVE Who button: https://evewho.com/corporation/98817357
-- Featured ship cards: Vengeance, Curse, Sacrilege, Imperial Navy Slicer
-- Member quote carousel
-- Animated stats counters
-- Mobile navigation
-- Responsive layout
-- Dark Khanid / Amarr visual styling
+Includes:
+- Pulsing Khanid Eye logo
+- Animated starfield
+- Multi-page SEO structure
+- Khanid Kingdom lore page
+- Khanid ships archive
+- Battle report pages
+- sitemap.xml and robots.txt
+- Open Graph and structured metadata
 
-## Deploy
-Upload these files to your GitHub Pages repository:
-- index.html
-- style.css
-- app.js
-- assets/khanid-eye.png
+After upload, visit https://khanidkarnivale.com/ and hard-refresh.
