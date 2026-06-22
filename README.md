@@ -1,15 +1,15 @@
-# Khanid Karnivale — The Kingdom Archives
+# Khanid Karnivale — Version X.6: The Keeper of the Archives
 
-GitHub Pages-ready static website. Upload all files in this folder to the root of your repository.
+GitHub Pages-ready static website for KhanidKarnivale.com.
 
-Includes:
-- Pulsing Khanid Eye logo
-- Animated starfield
-- Multi-page SEO structure
-- Khanid Kingdom lore page
-- Khanid ships archive
-- Battle report pages
-- sitemap.xml and robots.txt
-- Open Graph and structured metadata
+## New in X.6
 
-After upload, visit https://khanidkarnivale.com/ and hard-refresh.
+- Added `leadership.html` for the current Ringmaster and notable figures.
+- Updated the Ringmaster rank to identify Paladin Crusader, Patriot Cela Kashuken as the current office holder.
+- Preserved Darrius Knighte as Founding Ringmaster without implying Cela Kashuken will step down soon.
+- Added leadership links to the top navigation and SEO footer.
+- Updated glossary, customs, index, and rank structure copy.
+
+## Upload
+
+Upload all files in this ZIP to the root of your GitHub Pages repository.
